@@ -507,3 +507,66 @@ footer {
 .media-link-footer:focus {
     background-color: #31d0aa;
 }
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(47, 46, 66, 0.7);
+
+}
+
+.modal {
+    width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    border-radius: ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+.button-close {
+    margin-left: auto;
+    padding-top: ;
+    padding-right: ;
+    width: 24px;
+    height: 24px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+}
+
+.modal-titel {
+    text-align: center;
+    align-self: center;
+    max-width: ;
+    margin-bottom: ;
+}
+
+.modal-input {
+    min-height: 40px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #2E2F42;
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.modal-input::placeholder {
+    color: ;
+}
+
+.modal-input:required::after{
+    content: "*";
+    color: blue;
+}
+
+.modal-label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
