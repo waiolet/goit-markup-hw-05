@@ -178,7 +178,7 @@ h1, h2, h3, p {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-    margin: auto;
+    margin: 0;
     
     
 }
