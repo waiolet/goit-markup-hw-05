@@ -612,6 +612,9 @@ footer {
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .button-close:hover .modal-close-icon use{
     fill: white;
 }
@@ -746,7 +749,6 @@ footer {
     border-radius: 2px;
     border: 1px solid #2E2F4266;
     margin-right: 8px;
-    display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -758,11 +760,11 @@ footer {
 .modal-privacy-agree:checked + .modal-privacy-text span {
     background-color: #404BBF;
     border: none;
-    fill: white;
+    fill: #F4F4FD;
 }
 
 .privacy-link {
-    color: #404BBF;
+    color: #4d5ae5;
     text-decoration: underline;
     margin-left: 4px;
 }
