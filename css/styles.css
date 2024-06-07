@@ -178,6 +178,7 @@ h1, h2, h3, p {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
+    margin: 0 auto;
     
     
 }
@@ -658,7 +659,6 @@ footer {
     width: 100%;
     border: 1px solid #2E2F4266;
     background-color: transparent;
-    margin-bottom: 8px;
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
