@@ -715,7 +715,7 @@ footer {
  }
 
  .modal-button {
-    display: flex;
+    display: block;
     align-self: center;
  }
 
@@ -743,7 +743,6 @@ footer {
 
 
  .modal-privacy-text span {
-    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -755,6 +754,10 @@ footer {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-span {
+    display: inline-flex;
 }
 
 .modal-privacy-agree:checked + .modal-privacy-text span {
