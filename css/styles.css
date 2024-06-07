@@ -517,10 +517,6 @@ footer {
     gap: 24px;
 }
 
-.subscribe-elements {
-    display: flex;
-    gap: 24px;
-}
 
 .subscribe {
     background-color: transparent;
