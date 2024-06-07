@@ -512,6 +512,11 @@ footer {
     margin-left: 80px;
 }
 
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
 .subscribe-elements {
     display: flex;
     gap: 24px;
@@ -525,12 +530,23 @@ footer {
     border: 1px solid #FFFFFF;
     padding-left: 16px;
     outline: transparent; 
-}
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+}   
+    
+.subscribe::placeholder {
+    color: #ffffff;
+    }
+
 
 .btn-subscribe {
     padding: 8px 64px 8px 24px;
     height: 40px;
     position: relative;
+    min-width: 165px;
 }
 
 .subscribe-icon {
