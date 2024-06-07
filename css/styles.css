@@ -543,12 +543,16 @@ footer {
     height: 40px;
     position: relative;
     min-width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subscribe-icon {
     position: absolute;
     right: 24px;
     fill: #FFFFFF;
+    margin-left: 16px;
 }
 
 
