@@ -561,25 +561,27 @@ footer {
     height: 100%;
     position: fixed;
     top: 0;
-    background-color: rgba(47, 46, 66, 0.7);
+    background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
     pointer-events: 0;
 
+
 }
 
-/* .is-open {
+.is-open {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
+    
 
-} */
+} 
 
 .modal {
     width: 408px;
     min-height: 584px;
     background-color: #fcfcfc;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -589,6 +591,7 @@ footer {
             0px 1px 1px 0px #00000024,
             0px 1px 3px 0px #0000001F,
             0px 2px 1px 0px #00000033;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .button-close {
@@ -603,14 +606,32 @@ footer {
     border-radius: 50%;
     background-color: #e7e9fc;
     position: absolute;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-close:hover .modal-close-icon{
+.button-close:hover .modal-close-icon use{
+    fill: white;
+}
+
+.button-close:focus .modal-close-icon use {
     fill: white;
 }
 
 .button-close:hover {
     background-color: #404BBF;
+    border: none;
+}
+
+.button-close:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.modal-form-element {
+    margin-bottom: 8px;
 }
 
 .modal-titel {
@@ -641,12 +662,12 @@ footer {
 
 
 .modal-label {
-    display: inline-block;
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 4px;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     text-align: left;
     color: #8E8F99;
